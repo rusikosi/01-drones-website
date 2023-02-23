@@ -6,14 +6,14 @@
 
 main {
   
-  margin: 0 auto;
+  margin: 0 40px;
 }
 
 /*------header-----------------*/
 
 header h1 {
   text-align: center;
-  margin: 15px;
+  margin: 40px;
 }
 
 /*-----------------------*/
@@ -25,7 +25,7 @@ header h1 {
 }
 
  h2 {
-  margin: 15px;
+  margin: 40px;
  }
 
 .flexbox-list {
@@ -50,7 +50,8 @@ header h1 {
   flex-basis: 50%;
   
 }
-/*---------item--------------*/
+
+/*---------items--------------*/
 
 .flexbox-item {
   display: flex;
@@ -74,10 +75,61 @@ header h1 {
   overflow: hidden;
   
 }
+
+/*
 .flexbox-item p {
   text-align: justify;
   text-justify: inter-word;
   justify-content: center;
   align-items: center;
 }
+*/
+/*--------- GRID --------------*/
 
+.grid-section {
+  margin: 40px;
+}
+
+.grid-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+  margin: 20px 40px ;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+}
+
+.grid-item {
+  margin: 25px 10px;
+}
+
+
+
+
+
+
+
+
+
+/*---------------------------------*/
+/*
+
+.grid-item p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+*/
+
+
+/*----changing for all <p>---------*/
+p {
+  text-align: justify;
+  text-justify: inter-word;
+  justify-content: center;
+  align-items: flex-basis;
+}
