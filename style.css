@@ -33,7 +33,7 @@ header h1 {
   margin: 40px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 10px;
   
 }
@@ -41,11 +41,13 @@ header h1 {
 .flexbox-list ul {
   display: flex;
   flex-wrap: wrap;
+  flex-basis: 25%;
 }
 
 .flexbox-list li:first-child {
   /* flex-grow: 2; */
   color:red;
+  flex-basis: 50%;
   
 }
 /*---------item--------------*/
