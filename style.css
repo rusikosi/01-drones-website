@@ -32,7 +32,7 @@ header h1 {
 }
 
 
-/*-----------------------*/
+/*---------FLEX--------------*/
 
 
 .flexbox-section {
@@ -51,6 +51,7 @@ header h1 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+  width: 100%;
   
 }
 
@@ -61,8 +62,6 @@ header h1 {
 }
 
 .flexbox-list li:first-child {
-  /* flex-grow: 2; */
-  color:red;
   flex-basis: 50%;
   
 }
@@ -87,14 +86,7 @@ header h1 {
   
 }
 
-/*
-.flexbox-item p {
-  text-align: justify;
-  text-justify: inter-word;
-  justify-content: center;
-  align-items: center;
-}
-*/
+
 /*--------- GRID --------------*/
 
 .grid-section {
@@ -108,6 +100,7 @@ header h1 {
   gap: 30px;
   margin: 20px 40px ;
   overflow: hidden;
+  width: 100%;
 }
 
 .grid-item img {
@@ -116,14 +109,12 @@ header h1 {
 }
 
 .grid-item {
-  /*margin: 25px 10px;
-  */
   max-width: 100%;
   margin: 0 auto;
   
 }
 
-/*---------------------------------*/
+/*------------MEDIA---------------------*/
 
 
 @media screen and (max-width: 600px) {
@@ -181,41 +172,16 @@ justify-content: start;
 
   }
   .flexbox-list li:first-child {
-    /* flex-grow: 2; */
-    color:red;
     flex-basis: 40%;
     
   }
 .flexbox-list li:nth-child(2) {
-  /* flex-grow: 2; */
-  color:red;
   flex-basis: 25%;
 }
 .flexbox-list li:nth-child(3) {
-  /* flex-grow: 2; */
-  color:red;
   flex-basis: 25%;
 }
 }
 
 
 
-
-On mobile phones (smaller than 600px): a one column grid, that spans the full width
-On tablets (between 600px and 1024px): a three column grid, with the exception that the first two items span the full width together (so first we have two columns, then after the first two items we have three columns)
-On desktops (1024px and up): a four column grid, with the exception that the first item spans two columns.
-There should be some margin between the grid items
-
-
-/*---------------------------------*/
-/*
-
-.grid-item p {
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-*/
-
-
-/*----changing for all <p>---------*/
